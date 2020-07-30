@@ -1,0 +1,17 @@
+.form{
+    font-size: 24px;
+    width: 65%;
+    margin-top: 10%;
+}
+
+.form_line{
+    margin-bottom: 30px;
+}
+
+.last_form_line{
+    margin-top: 60px;
+}
+
+.form_input{
+    width: 100%;
+}

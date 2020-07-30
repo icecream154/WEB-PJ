@@ -1,0 +1,34 @@
+.form{
+    font-size: 24px;
+    width: 65%;
+    margin-top: 10%;
+}
+
+.form_line{
+    margin-bottom: 30px;
+}
+
+.last_form_line{
+    margin-top: 60px;
+}
+
+.form_input{
+    width: 100%;
+}
+
+.form_hint_line{
+    color: #a94442;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#register_button{
+    float: right;
+}
+
+#verification_code_canvas{
+    width: 160px;
+    height: 40px;
+}

@@ -1,0 +1,24 @@
+.hint-title{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.table_title{
+    font-weight: bold;
+}
+
+.first-row{
+    margin-bottom: 25px;
+}
+
+.normal-row{
+    margin-bottom: 10px;
+}
+
+.button-col{
+    text-align: left;
+}
+
+.small_table_content{
+    font-size: 18px;
+}

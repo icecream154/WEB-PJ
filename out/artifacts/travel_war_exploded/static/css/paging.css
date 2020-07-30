@@ -1,0 +1,34 @@
+.paging_img{
+    width: 400px;
+    height: 400px;
+}
+
+.paging_pic_block{
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.paging_info_table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    width: 400px;
+    font-size: 16px;
+}
+
+.paging_item_td{
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 30px;
+}
+
+.paging_content_td{
+    text-align: left;
+    font-size: 20px;
+}
+
+.paging_list{
+    font-size: 20px;
+    margin-bottom: 40px;
+}

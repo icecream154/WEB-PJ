@@ -1,0 +1,23 @@
+#search_header{
+    margin-top: 35px;
+    font-size: 22px;
+}
+
+.selected{
+    font-size: 25px;
+    color: #2aabd2;
+}
+
+.separator_line{
+    margin-top: 35px;
+    margin-bottom: 65px;
+    height: 3px;
+    background: #999999;
+    opacity: 0.14;
+}
+
+#no_results{
+    font-size: 32px;
+    font-family: Consolas;
+    font-weight: bold;
+}
