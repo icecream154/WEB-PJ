@@ -15,7 +15,7 @@ public class UserAccountServlet extends HttpServlet {
         User user = Repo.userRepository.findUserByUsername(username);
         if(user == null){
             // no such user, redirect to index.jsp
-            response.sendRedirect("index.jsp");
+            response.sendRedirect(request.getContextPath() + "/index.jsp");
         }else{
             // add current user in request attributes
             request.setAttribute("user", user);

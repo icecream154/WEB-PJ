@@ -18,7 +18,6 @@ public class UpdateCollectionServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Long id = Long.parseLong((String) request.getParameter("id"));
         String operation = request.getParameter("operation");
-        response.setCharacterEncoding("UTF-8");
         String loginUsername = (String) request.getSession().getAttribute("loginUsername");
         if(loginUsername == null){
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);

@@ -18,7 +18,7 @@ public class PictureDetailServlet extends HttpServlet {
         Picture picture = Repo.pictureRepository.findPictureById(id);
         System.out.println(picture);
         if(picture == null){
-            response.sendRedirect("/index.jsp");
+            response.sendRedirect(request.getContextPath() + "/index.jsp");
         }else{
             System.out.println(picture);
             request.setAttribute("picture", picture);

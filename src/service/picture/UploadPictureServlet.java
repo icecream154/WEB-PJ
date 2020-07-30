@@ -24,6 +24,7 @@ public class UploadPictureServlet extends HttpServlet {
     private static final int MAX_FILE_SIZE = 1024 * 1024 * 10;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
         String loginUsername = (String) request.getSession().getAttribute("loginUsername");
         if(loginUsername == null){
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
@@ -46,7 +47,7 @@ public class UploadPictureServlet extends HttpServlet {
                 if(item.isFormField()){
                     String name = item.getFieldName();
                     String value = item.getString();
-                    request.setAttribute(name, new String(value.getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8));
+                    request.setAttribute(name, value);
                     System.out.println(name + ": " + request.getAttribute(name));
                 }else{
                     System.out.println("picFile found");

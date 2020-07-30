@@ -3,7 +3,6 @@
         response.sendRedirect(request.getContextPath() + "/index.jsp");
     }
 %>
-
 <%@ include file="../../templates/head.jsp"%>
 <title>Register</title>
 <link type="text/css" rel="stylesheet" href="<%=request.getContextPath()%>/static/css/register.css">
