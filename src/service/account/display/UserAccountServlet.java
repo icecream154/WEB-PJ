@@ -11,6 +11,7 @@ import java.io.IOException;
 
 public class UserAccountServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setCharacterEncoding("UTF-8");
         String username = request.getParameter("username");
         User user = Repo.userRepository.findUserByUsername(username);
         if(user == null){

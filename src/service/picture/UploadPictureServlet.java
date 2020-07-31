@@ -24,6 +24,7 @@ public class UploadPictureServlet extends HttpServlet {
     private static final int MAX_FILE_SIZE = 1024 * 1024 * 10;
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setCharacterEncoding("UTF-8");
         request.setCharacterEncoding("UTF-8");
         String loginUsername = (String) request.getSession().getAttribute("loginUsername");
         if(loginUsername == null){

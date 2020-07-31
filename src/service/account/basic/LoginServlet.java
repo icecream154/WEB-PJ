@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setCharacterEncoding("UTF-8");
         String usernameOrEmail = request.getParameter("usernameOrEmail");
         String password = request.getParameter("password");
         User user;

@@ -16,6 +16,7 @@ import java.util.List;
 
 public class SearchPicturesServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setCharacterEncoding("UTF-8");
         String searchContent = new String(request.getParameter("searchContent").getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
         String searchField = request.getParameter("searchField");
         String searchOrder = request.getParameter("searchOrder");

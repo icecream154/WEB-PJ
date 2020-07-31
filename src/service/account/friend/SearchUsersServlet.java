@@ -13,6 +13,7 @@ import java.util.List;
 
 public class SearchUsersServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setCharacterEncoding("UTF-8");
         String username = request.getParameter("username");
         List<User> users = Repo.userRepository.findUsersByUsernameContains(username);
         response.setStatus(HttpServletResponse.SC_OK);

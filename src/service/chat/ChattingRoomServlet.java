@@ -11,6 +11,7 @@ import java.io.IOException;
 
 public class ChattingRoomServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setCharacterEncoding("UTF-8");
         String loginUsername = (String) request.getSession().getAttribute("loginUsername");
         if(loginUsername == null){
             response.sendRedirect(request.getContextPath() + "/index.jsp");

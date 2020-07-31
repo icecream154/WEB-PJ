@@ -15,6 +15,7 @@ import java.util.List;
 public class GetFriendsServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setCharacterEncoding("UTF-8");
         String loginUsername = (String) request.getSession().getAttribute("loginUsername");
         if(loginUsername == null){
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);

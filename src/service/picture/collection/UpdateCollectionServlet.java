@@ -16,6 +16,7 @@ public class UpdateCollectionServlet extends HttpServlet {
     private static final String O_REMOVE = "REMOVE";
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setCharacterEncoding("UTF-8");
         Long id = Long.parseLong((String) request.getParameter("id"));
         String operation = request.getParameter("operation");
         String loginUsername = (String) request.getSession().getAttribute("loginUsername");

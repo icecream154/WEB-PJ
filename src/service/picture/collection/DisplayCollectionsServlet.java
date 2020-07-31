@@ -15,6 +15,7 @@ import java.util.List;
 public class DisplayCollectionsServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setCharacterEncoding("UTF-8");
         String username = request.getParameter("username");
         String currentIndex = request.getParameter("currentIndex");
         if(currentIndex == null){

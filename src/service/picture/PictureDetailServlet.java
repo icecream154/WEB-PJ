@@ -14,6 +14,7 @@ import java.util.List;
 
 public class PictureDetailServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setCharacterEncoding("UTF-8");
         Long id = Long.parseLong(request.getParameter("id"));
         Picture picture = Repo.pictureRepository.findPictureById(id);
         System.out.println(picture);

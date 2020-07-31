@@ -51,6 +51,5 @@ public class SendChattingMessageServlet extends HttpServlet {
         Repo.roomRepository.save(room);
         response.setStatus(HttpServletResponse.SC_OK);
         response.getWriter().print("{\"message\":\"Message Send Success!\"}");
-
     }
 }
