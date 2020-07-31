@@ -38,6 +38,8 @@ public class SendChattingMessageServlet extends HttpServlet {
         }
 
         String message = request.getParameter("message");
+        System.out.println("message: " + message);
+        System.out.println("message[UTF-8]: " + new String(message.getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8));
         if(message == null || message.equals("")){
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
             response.getWriter().print("{\"message\":\"Empty message!\"}");

@@ -1,3 +1,8 @@
+<%
+    if(request.getSession().getAttribute("loginUsername") != null){
+        response.sendRedirect(request.getContextPath() + "/index.jsp");
+    }
+%>
 <%@ include file="../../templates/head.jsp"%>
 <title>Login</title>
 <link type="text/css" rel="stylesheet" href="<%=request.getContextPath()%>/static/css/login.css">

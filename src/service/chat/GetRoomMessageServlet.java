@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 public class GetRoomMessageServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -34,8 +35,9 @@ public class GetRoomMessageServlet extends HttpServlet {
             response.getWriter().print("{\"message\":\"No such chatting room!\"}");
             return;
         }
-
+        response.setCharacterEncoding("UTF-8");
         response.setStatus(HttpServletResponse.SC_OK);
+        System.out.println("GET REQUEST: " + room.getMessages());
         response.getWriter().print(room.getMessages());
 
     }

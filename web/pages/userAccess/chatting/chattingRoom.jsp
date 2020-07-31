@@ -1,5 +1,5 @@
 <%
-    if(request.getSession().getAttribute("loginUsername") != null){
+    if(request.getSession().getAttribute("loginUsername") == null){
         response.sendRedirect(request.getContextPath() + "/index.jsp");
     }
 %>
