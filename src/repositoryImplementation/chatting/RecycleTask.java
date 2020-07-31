@@ -8,7 +8,7 @@ import java.util.Set;
 import java.util.TimerTask;
 
 public class RecycleTask extends TimerTask {
-    private static final long TIMEOUT = 30 * 1000; // 30 seconds
+    private static final long TIMEOUT = 30 * 60 * 1000; // 30 seconds
 
     @Override
     public void run() {

@@ -12,7 +12,7 @@ public class RoomRepositoryImpl implements RoomRepository {
 
     static{
         Timer timer = new Timer();
-        timer.schedule(new RecycleTask(), 30 * 1000, 30 * 1000);
+        timer.schedule(new RecycleTask(), 10 * 1000, 60 * 1000);
     }
 
     @Override
